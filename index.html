@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/imagens/favicon.ico" type="image/x-icon">
+    <title>Super Mario Bros - The Movie</title>
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/fonts.css">
+    <link rel="stylesheet" href="./src/css/variaveis.css">
+    <link rel="stylesheet" href="./src/css/modal.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+</head>
+<body>
+    <!--===== BG VIDEO =====-->
+    <section class="bg-video">
+        <video class="video" autoplay muted loop>
+            <source src="./src/video/Untitled (1).mp4" type="video/mp4">
+        </video>
+    </section>
+    <!--===== END BG VIDEO =====-->
+
+    <div class="carregando"></div>
+    <header>
+        <a href="/">
+            <img class="logo" src="./src/imagens/logo-chapeu-mario.png" alt="logo chapéu mário">
+        </a>
+        <nav>
+            <ul class="links">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Detalhes</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <div class="informacoes">
+                <img class="imagem-titulo" src="./src/imagens/titulo-filme.png" alt="imagem do título do filme">
+                <p class="descricao">Mario é um encanador junto com seu irmão Luigi. Um dia, eles vão parar no reino dos cogumelos, governado pela Princesa Peach, mas ameaçado pelo rei dos Koopas, que faz de tudo para conseguir reinar em todos os lugares.</p>
+                <button class="botao-trailer">Veja o trailer</button>
+            </div>
+            <img class="mario-hero" src="./src/imagens/super-mario-chars.png" alt="Mário com uma estrela apontando para algo">
+        </div>
+        <div class="modal">
+            <div class="conteudo-modal">
+                <span class="fechar-modal">❌</span>
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Cb4WV4aXBpk" title="Trailer oficial" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+        </div>
+    </main>
+    <script src="./src/js/index.js"></script>
+</body>
+</html>

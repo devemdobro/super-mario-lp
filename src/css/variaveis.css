@@ -1,0 +1,11 @@
+:root {  
+    --cor-branca: #fff;
+    --cor-fundo-primaria: #F44336;
+    --cor-fundo-secundaria: #00BFFC;
+    --cor-botao: rgb(255, 0, 33);
+    --cor-botao-hover: rgb(213, 1, 29);
+    --cor-botao-secundario: #263238;
+    --cor-fundo-escuro: #040203;    
+    --mobile-padding: 30px;
+  }
+  

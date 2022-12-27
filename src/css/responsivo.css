@@ -1,0 +1,83 @@
+@media (max-width: 768px) {
+    body{
+        padding: 40px 0;
+    }
+	header {
+		justify-content: space-around;
+	}
+	main .hero {
+		flex-direction: column-reverse;
+		flex-wrap: wrap;
+		align-content: center;
+	}
+	main .hero .mario-hero {
+		max-width: 400px;
+	}
+
+	main .hero .informacoes {
+		gap: 50px;
+		align-items: center;
+	}
+	main .informacoes {
+		flex-direction: column-reverse;
+	}
+	.modal .fechar-modal {
+		right: -40px;
+		top: -50px;
+	}
+	.modal #video {
+		width: 500px;
+		height: 280px;
+	}
+
+	.bg-video {
+		display: none;
+	}
+
+	.bg-video .video {
+		display: none;
+	}
+}
+
+@media (max-width: 425px) {
+	header {
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 10px;
+	}
+	header .logo {
+		max-width: 80px;
+	}
+	main {
+		flex-direction: column;
+	}
+
+	main .hero .mario-hero {
+		max-width: 300px;
+	}
+
+	main .hero .informacoes .descricao {
+		width: 300px;
+	}
+	main .hero .botao-trailer {
+		padding: 14px;
+	}
+
+	.modal .fechar-modal {
+		right: -30px;
+		top: -50px;
+		width: 30px;
+		line-height: 30px;
+	}
+	.modal #video {
+		width: 300px;
+		height: 169px;
+	}
+}
+
+@media (max-width: 376px) {
+	.modal #video {
+		width: 250px;
+		height: 140px;
+	}
+}

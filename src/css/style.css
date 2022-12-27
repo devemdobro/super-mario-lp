@@ -1,0 +1,122 @@
+html{
+    color: var(--cor-branca);
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'SecularOne';
+    background-color: var(--cor-fundo-primaria);    
+}
+
+.carregando {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url('../imagens/mario-up.gif') 50% 50% no-repeat var(--cor-fundo-primaria);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: var(--mobile-padding);
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header .logo{
+    max-width: 65px;
+    background: none;
+}
+
+header nav{
+    display: flex;
+}
+
+header .links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav li a {
+    color: var(--cor-branca);
+    font-size: 25px;
+    padding: 10px 20px;
+    transition: 0.2s;
+    border-radius: 50px;
+    letter-spacing: 1px;
+}
+
+main{
+    display: flex;
+    min-height: calc(100vh - 132px);
+    justify-content: center;
+}
+
+main .hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+    gap: 40px;
+}
+
+main .hero .informacoes{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    width: 50%;
+    transition: 0.2s;
+}
+
+main .hero .descricao{
+    font-family: 'SecularOne';
+    width: 80%;
+    font-size: 20px;
+}
+
+main .hero .botao-trailer{
+    padding: 15px;    
+    color: var(--cor-branca);
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    background: var(--cor-botao);    
+    transition: 0.5s all ease-in-out;
+
+}
+header nav li a:hover,
+main .hero .botao-trailer:hover{    
+    transform: scale(1.1);
+}
+
+main .hero img{
+    max-width: 600px;
+    height: auto;
+}
+
+.bg-video{
+    position: absolute;    
+    display: flex;    
+    justify-content: center;    
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;    
+}
+
+.bg-video::after {
+    content: "";
+    position: absolute;    
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: linear-gradient(110deg, #0a0c10 25%, rgba(11, 12, 16, 0.8) 50%, #0a0c10 70%);
+  }
+  
+  .bg-video .video {
+    height: 100%;
+  }
