@@ -49,6 +49,11 @@ header nav li a {
   letter-spacing: 1px;
 }
 
+header nav li a:hover {
+    transition: 0.3s;
+    background: var(--cor-botao-hover);
+  }
+
 main {
   display: flex;
   min-height: calc(100vh - 132px);
@@ -89,18 +94,17 @@ main .hero .botao-trailer {
   transition: 0.5s all ease-in-out;
 }
 
-header nav li a:hover,
 main .hero .botao-trailer:hover {
   transform: scale(1.1);
 }
 
 main .hero .imagem-titulo {
-    max-width: 500px;
+  max-width: 500px;
 }
 
 main .hero .mario {
-    /* max-width: 500px; */
-  }
+  /* max-width: 500px; */
+}
 
 .fundo-video {
   position: absolute;
