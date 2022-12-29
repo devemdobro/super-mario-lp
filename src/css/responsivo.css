@@ -1,21 +1,26 @@
 @media (max-width: 768px) {
-    body{
+    /* body{
         padding: 40px 0;
-    }
-	header {
+    } */
+	/* header {
 		justify-content: space-around;
-	}
+	} */
 	main .hero {
 		flex-direction: column-reverse;
 		flex-wrap: wrap;
 		align-content: center;
 	}
-	main .hero .mario-hero {
-		max-width: 400px;
+	main .hero .mario {
+		max-width: 85%;
+		margin-bottom: 30px;
+	}
+
+	main .hero .imagem-titulo {
+		max-width: 75%;
 	}
 
 	main .hero .informacoes {
-		gap: 50px;
+		gap: 40px;
 		align-items: center;
 	}
 	main .informacoes {
@@ -30,11 +35,11 @@
 		height: 280px;
 	}
 
-	.bg-video {
+	.fundo-video {
 		display: none;
 	}
 
-	.bg-video .video {
+	.fundo-video .video {
 		display: none;
 	}
 }
@@ -51,8 +56,8 @@
 	main {
 		flex-direction: column;
 	}
-
-	main .hero .mario-hero {
+	
+	main .hero .mario {
 		max-width: 300px;
 	}
 
