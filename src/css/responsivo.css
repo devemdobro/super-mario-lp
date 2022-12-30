@@ -1,26 +1,31 @@
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   /* body{
         padding: 40px 0;
     } */
   /* header {
 		justify-content: space-around;
 	} */
+
+  main {
+    min-height: 100%;
+	margin-top: 20px;
+  }
   main .hero {
     flex-direction: column-reverse;
     flex-wrap: wrap;
     align-content: center;
   }
   main .hero .mario {
-    max-width: 85%;
+    max-width: 65%;
     margin-bottom: 30px;
   }
 
   main .hero .imagem-titulo {
-    max-width: 75%;
+    max-width: 50%;
   }
 
   main .hero .informacoes {
-    gap: 40px;
+    gap: 30px;
     align-items: center;
   }
   main .informacoes {
@@ -28,6 +33,7 @@
   }
   main .hero .descricao {
     color: var(--cor-branca);
+	text-align: center;
   }
 
   .modal .fechar-modal {
@@ -62,12 +68,13 @@
   }
 
   main .hero .mario {
-    max-width: 300px;
+    max-width: 80%;
   }
 
-  main .hero .informacoes .descricao {
-    width: 300px;
+  main .hero .imagem-titulo {
+    max-width: 75%;
   }
+
   main .hero .botao-trailer {
     padding: 14px;
   }
