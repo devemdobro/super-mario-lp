@@ -21,5 +21,5 @@ btnfecharModal.addEventListener("click", ()=>{
 
 setTimeout(()=>{
     loader.remove()
-},5000)
+}, 5000)
 

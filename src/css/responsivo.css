@@ -1,14 +1,11 @@
 @media (max-width: 1200px) {
-  /* body{
-        padding: 40px 0;
-    } */
-  /* header {
-		justify-content: space-around;
-	} */
+  body {
+    background-color: var(--cor-fundo-primaria);
+  }
 
   main {
-    min-height: 100%;
-	margin-top: 20px;
+    /* min-height: 100%; */
+    margin-top: 20px;
   }
   main .hero {
     flex-direction: column-reverse;
@@ -33,7 +30,12 @@
   }
   main .hero .descricao {
     color: var(--cor-branca);
-	text-align: center;
+    text-align: center;
+  }
+
+  main .hero .botao-trailer {
+    padding: 14px;
+    background: var(--cor-botao-secundario);
   }
 
   .modal .fechar-modal {
@@ -73,10 +75,6 @@
 
   main .hero .imagem-titulo {
     max-width: 75%;
-  }
-
-  main .hero .botao-trailer {
-    padding: 14px;
   }
 
   .modal .fechar-modal {

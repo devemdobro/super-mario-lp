@@ -5,20 +5,21 @@ html {
 body {
   min-height: 100vh;
   font-family: "Poppins";
-  background-color: var(--cor-fundo-primaria);
+  background-color: var(--cor-fundo-escuro);
 }
 
 .carregando {
   position: fixed;
   width: 100%;
   height: 100%;
-  background: url("../imagens/mario-up.gif") 50% 50% no-repeat var(--cor-fundo-primaria);
+  background: url("../imagens/mario-up.gif") 50% 50% no-repeat
+    var(--cor-fundo-primaria);
 }
 
 header {
   display: flex;
   justify-content: space-between;
-  padding: var(--mobile-padding);
+  padding: 30px;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -72,7 +73,6 @@ main .hero .informacoes {
   flex-direction: column;
   align-items: flex-start;
   gap: 30px;
-  /* width: 50%; */
   max-width: 750px;
   transition: 0.2s;
 }
@@ -101,10 +101,6 @@ main .hero .imagem-titulo {
   max-width: 500px;
 }
 
-main .hero .mario {
-  /* max-width: 500px; */
-}
-
 .fundo-video {
   position: absolute;
   display: flex;
@@ -118,16 +114,18 @@ main .hero .mario {
 
 .fundo-video::after {
   content: "";
-  position: absolute;
-  width: 100vw;
   height: 100vh;
+  width: 100vw;
+  position: absolute;
   top: 0;
   left: 0;
+
+  /* mostrar como fazer esse efeito aqui https://cssgradient.io/ */
   background: linear-gradient(
-    110deg,
-    #0a0c10 25%,
-    rgba(11, 12, 16, 0.8) 50%,
-    #0a0c10 70%
+    90deg,
+    var(--cor-fundo-escuro) 0%,
+    rgba(0, 0, 0, 0.85) 49%,
+    var(--cor-fundo-escuro) 100%
   );
 }
 
