@@ -1,88 +1,92 @@
 @media (max-width: 768px) {
-    /* body{
+  /* body{
         padding: 40px 0;
     } */
-	/* header {
+  /* header {
 		justify-content: space-around;
 	} */
-	main .hero {
-		flex-direction: column-reverse;
-		flex-wrap: wrap;
-		align-content: center;
-	}
-	main .hero .mario {
-		max-width: 85%;
-		margin-bottom: 30px;
-	}
+  main .hero {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  main .hero .mario {
+    max-width: 85%;
+    margin-bottom: 30px;
+  }
 
-	main .hero .imagem-titulo {
-		max-width: 75%;
-	}
+  main .hero .imagem-titulo {
+    max-width: 75%;
+  }
 
-	main .hero .informacoes {
-		gap: 40px;
-		align-items: center;
-	}
-	main .informacoes {
-		flex-direction: column-reverse;
-	}
-	.modal .fechar-modal {
-		right: -40px;
-		top: -50px;
-	}
-	.modal #video {
-		width: 500px;
-		height: 280px;
-	}
+  main .hero .informacoes {
+    gap: 40px;
+    align-items: center;
+  }
+  main .informacoes {
+    flex-direction: column-reverse;
+  }
+  main .hero .descricao {
+    color: var(--cor-branca);
+  }
 
-	.fundo-video {
-		display: none;
-	}
+  .modal .fechar-modal {
+    right: -40px;
+    top: -50px;
+  }
+  .modal #video {
+    width: 500px;
+    height: 280px;
+  }
 
-	.fundo-video .video {
-		display: none;
-	}
+  .fundo-video {
+    display: none;
+  }
+
+  .fundo-video .video {
+    display: none;
+  }
 }
 
 @media (max-width: 425px) {
-	header {
-		flex-wrap: wrap;
-		justify-content: center;
-		gap: 10px;
-	}
-	header .logo {
-		max-width: 80px;
-	}
-	main {
-		flex-direction: column;
-	}
-	
-	main .hero .mario {
-		max-width: 300px;
-	}
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  header .logo {
+    max-width: 80px;
+  }
+  main {
+    flex-direction: column;
+  }
 
-	main .hero .informacoes .descricao {
-		width: 300px;
-	}
-	main .hero .botao-trailer {
-		padding: 14px;
-	}
+  main .hero .mario {
+    max-width: 300px;
+  }
 
-	.modal .fechar-modal {
-		right: -30px;
-		top: -50px;
-		width: 30px;
-		line-height: 30px;
-	}
-	.modal #video {
-		width: 300px;
-		height: 169px;
-	}
+  main .hero .informacoes .descricao {
+    width: 300px;
+  }
+  main .hero .botao-trailer {
+    padding: 14px;
+  }
+
+  .modal .fechar-modal {
+    right: -30px;
+    top: -50px;
+    width: 30px;
+    line-height: 30px;
+  }
+  .modal #video {
+    width: 300px;
+    height: 169px;
+  }
 }
 
 @media (max-width: 376px) {
-	.modal #video {
-		width: 250px;
-		height: 140px;
-	}
+  .modal #video {
+    width: 250px;
+    height: 140px;
+  }
 }
