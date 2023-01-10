@@ -23,13 +23,10 @@ body {
   width: 65px;
 }
 
-.cabecalho nav {
-  display: flex;
-}
-
 .cabecalho .menu {
   display: flex;
   align-items: center;
+  height: 100%;
 }
 
 .cabecalho nav li a {
@@ -38,8 +35,7 @@ body {
   font-size: 25px;
   padding: 10px 20px;
   transition: 0.2s;
-  border-radius: 50px;
-  letter-spacing: 1px;
+  border-radius: 50px;  
 }
 
 .cabecalho nav li a:hover {  
