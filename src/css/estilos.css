@@ -42,19 +42,19 @@ body {
   background: #d5011d;
 }
 
-main {
+.container {
   display: flex;
   min-height: calc(100vh - 132px);
   justify-content: center;
   padding: 0 30px 30px;
 }
 
-main .container {
+.container {
   display: flex;  
   align-items: center;  
 }
 
-main .container .informacoes {
+.container .informacoes {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -62,13 +62,13 @@ main .container .informacoes {
   max-width: 750px;
 }
 
-main .container .descricao {
+.container .descricao {
   color: #a8adb7;
   width: 95%;
   font-size: 18px;
 }
 
-main .container .botao-trailer {
+.container .botao-trailer {
   padding: 15px;
   color: #ffffff;
   font-size: 18px;
@@ -80,11 +80,11 @@ main .container .botao-trailer {
   text-transform: uppercase;
 }
 
-main .container .botao-trailer:hover {
+.container .botao-trailer:hover {
   transform: scale(1.1);
 }
 
-main .container .imagem-titulo {
+.container .imagem-titulo {
   max-width: 500px;
 }
 

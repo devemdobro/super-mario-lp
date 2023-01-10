@@ -3,36 +3,29 @@
     background-color: #F44336;
   }
 
-  main {    
+  .container {
     margin-top: 20px;
-  }
-
-  main .container {
     flex-direction: column-reverse;
     flex-wrap: wrap;
     align-content: center;
   }
   
-  main .container .mario {
+  .container .mario {
     max-width: 65%;
     margin-bottom: 30px;
   }
 
-  main .container .informacoes {
+  .container .informacoes {
     gap: 30px;
-    align-items: center;
-  }
-
-  main .informacoes {
-    flex-direction: column-reverse;
+    align-items: center;    
   }
   
-  main .container .descricao {
+  .container .descricao {
     color: #ffffff;
     text-align: center;
   }
 
-  main .container .botao-trailer {    
+  .container .botao-trailer {    
     background: #263238;
   }
   
@@ -50,24 +43,22 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
   .cabecalho {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
   }
+
   .cabecalho .logo {
     max-width: 80px;
   }
-  main {
-    flex-direction: column;
-  }
 
-  main .container .mario {
+  .container .mario {
     max-width: 80%;
   }
 
-  main .container .imagem-titulo {
+  .container .imagem-titulo {
     max-width: 75%;
   }
 
