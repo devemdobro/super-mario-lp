@@ -1,47 +1,41 @@
 @media (max-width: 1200px) {
   body {
-    background-color: var(--cor-fundo-primaria);
+    background-color: #F44336;
   }
 
-  main {
-    /* min-height: 100%; */
+  main {    
     margin-top: 20px;
   }
+
   main .container {
     flex-direction: column-reverse;
     flex-wrap: wrap;
     align-content: center;
   }
+  
   main .container .mario {
     max-width: 65%;
     margin-bottom: 30px;
-  }
-
-  main .container .imagem-titulo {
-    max-width: 50%;
   }
 
   main .container .informacoes {
     gap: 30px;
     align-items: center;
   }
+
   main .informacoes {
     flex-direction: column-reverse;
   }
+  
   main .container .descricao {
-    color: var(--cor-branca);
+    color: #ffffff;
     text-align: center;
   }
 
-  main .container .botao-trailer {
-    padding: 14px;
-    background: var(--cor-botao-secundario);
+  main .container .botao-trailer {    
+    background: #263238;
   }
-
-  .modal .fechar-modal {
-    right: -40px;
-    top: -50px;
-  }
+  
   .modal #video {
     width: 500px;
     height: 280px;
@@ -78,8 +72,6 @@
   }
 
   .modal .fechar-modal {
-    right: -30px;
-    top: -50px;
     width: 30px;
     line-height: 30px;
   }

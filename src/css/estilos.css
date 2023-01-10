@@ -1,19 +1,14 @@
-html {
-  color: var(--cor-branca);
-}
-
 body {
   min-height: 100vh;
-  font-family: "Poppins";
-  background-color: var(--cor-fundo-escuro);
+  font-family: "Poppins";    
 }
 
 .carregando {
   position: fixed;
-  width: 100%;
-  height: 100%;
-  background: url("../imagens/mario-up.gif") 50% 50% no-repeat
-    var(--cor-fundo-primaria);
+  width: 100vw;
+  height: 100vh;
+  background: url("../imagens/mario-up.gif") center no-repeat
+    #F44336;
 }
 
 .cabecalho {
@@ -25,8 +20,7 @@ body {
 }
 
 .cabecalho .logo {
-  max-width: 65px;
-  background: none;
+  width: 65px;
 }
 
 .cabecalho nav {
@@ -35,13 +29,12 @@ body {
 
 .cabecalho .menu {
   display: flex;
-  justify-content: space-around;
   align-items: center;
 }
 
 .cabecalho nav li a {
   font-weight: bold;
-  color: var(--cor-branca);
+  color: #ffffff;
   font-size: 25px;
   padding: 10px 20px;
   transition: 0.2s;
@@ -49,23 +42,20 @@ body {
   letter-spacing: 1px;
 }
 
-.cabecalho nav li a:hover {
-  transition: 0.3s;
-  background: var(--cor-botao-hover);
+.cabecalho nav li a:hover {  
+  background: #d5011d;
 }
 
 main {
   display: flex;
   min-height: calc(100vh - 132px);
   justify-content: center;
+  padding: 0 30px 30px;
 }
 
 main .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 1440px;
-  padding: 0 30px;
+  display: flex;  
+  align-items: center;  
 }
 
 main .container .informacoes {
@@ -74,23 +64,24 @@ main .container .informacoes {
   align-items: flex-start;
   gap: 30px;
   max-width: 750px;
-  transition: 0.2s;
 }
 
 main .container .descricao {
   color: #a8adb7;
-  width: 90%;
+  width: 95%;
   font-size: 18px;
 }
 
 main .container .botao-trailer {
   padding: 15px;
-  color: var(--cor-branca);
-  font-size: 20px;
+  color: #ffffff;
+  font-size: 18px;
   font-weight: 700;
   cursor: pointer;
-  background: var(--cor-botao);
+  background: #ff0021;
   transition: 0.5s all ease-in-out;
+  border: none;
+  text-transform: uppercase;
 }
 
 main .container .botao-trailer:hover {
@@ -102,10 +93,7 @@ main .container .imagem-titulo {
 }
 
 .fundo-video {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: absolute;    
   width: 100vw;
   height: 100vh;
   z-index: -1;
@@ -121,14 +109,9 @@ main .container .imagem-titulo {
   left: 0;
 
   /* mostrar como fazer esse efeito aqui https://cssgradient.io/ */
-  background: linear-gradient(
-    90deg,
-    var(--cor-fundo-escuro) 0%,
-    rgba(0, 0, 0, 0.85) 49%,
-    var(--cor-fundo-escuro) 100%
-  );
+  background: linear-gradient(90deg,#040203 0%,rgba(0, 0, 0, 0.85) 49%,#040203 100%);
 }
 
 .fundo-video .video {
-  height: 100%;
+  height: 100vh;
 }
