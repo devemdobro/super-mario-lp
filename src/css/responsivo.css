@@ -7,33 +7,33 @@
     /* min-height: 100%; */
     margin-top: 20px;
   }
-  main .hero {
+  main .container {
     flex-direction: column-reverse;
     flex-wrap: wrap;
     align-content: center;
   }
-  main .hero .mario {
+  main .container .mario {
     max-width: 65%;
     margin-bottom: 30px;
   }
 
-  main .hero .imagem-titulo {
+  main .container .imagem-titulo {
     max-width: 50%;
   }
 
-  main .hero .informacoes {
+  main .container .informacoes {
     gap: 30px;
     align-items: center;
   }
   main .informacoes {
     flex-direction: column-reverse;
   }
-  main .hero .descricao {
+  main .container .descricao {
     color: var(--cor-branca);
     text-align: center;
   }
 
-  main .hero .botao-trailer {
+  main .container .botao-trailer {
     padding: 14px;
     background: var(--cor-botao-secundario);
   }
@@ -57,23 +57,23 @@
 }
 
 @media (max-width: 425px) {
-  header {
+  .cabecalho {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
   }
-  header .logo {
+  .cabecalho .logo {
     max-width: 80px;
   }
   main {
     flex-direction: column;
   }
 
-  main .hero .mario {
+  main .container .mario {
     max-width: 80%;
   }
 
-  main .hero .imagem-titulo {
+  main .container .imagem-titulo {
     max-width: 75%;
   }
 

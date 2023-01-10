@@ -17,23 +17,23 @@
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="./src/css/responsivo.css">
 
-    <title>Super Mario Bros - The Movie</title>
+    <title>Super Mario Bros - O Filme</title>
 </head>
 <body>
-    <section class="fundo-video">
+    <div class="fundo-video">
         <video class="video" autoplay loop muted>
             <source src="./src/video/video-mario.mp4" type="video/mp4">
         </video>
-    </section>
+    </div>
 
     <div class="carregando"></div>
 
-    <header>
+    <header class="cabecalho">
         <a href="/">
             <img class="logo" src="./src/imagens/logo-chapeu-mario.png" alt="logo chapéu mário">
         </a>
         <nav>
-            <ul class="links">
+            <ul class="menu">
                 <li>
                     <a href="#">Home</a>
                 </li>
@@ -45,7 +45,7 @@
     </header>
 
     <main>
-        <div class="hero">
+        <div class="container">
             <div class="informacoes">
                 <img class="imagem-titulo" src="./src/imagens/titulo.png" alt="imagem do título do filme">
                 <p class="descricao">Mario é um encanador junto com seu irmão Luigi. Um dia, eles vão parar no reino dos cogumelos, governado pela Princesa Peach, mas ameaçado pelo rei dos Koopas, que faz de tudo para conseguir reinar em todos os lugares.</p>

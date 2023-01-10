@@ -16,7 +16,7 @@ body {
     var(--cor-fundo-primaria);
 }
 
-header {
+.cabecalho {
   display: flex;
   justify-content: space-between;
   padding: 30px;
@@ -24,22 +24,22 @@ header {
   margin: 0 auto;
 }
 
-header .logo {
+.cabecalho .logo {
   max-width: 65px;
   background: none;
 }
 
-header nav {
+.cabecalho nav {
   display: flex;
 }
 
-header .links {
+.cabecalho .menu {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-header nav li a {
+.cabecalho nav li a {
   font-weight: bold;
   color: var(--cor-branca);
   font-size: 25px;
@@ -49,7 +49,7 @@ header nav li a {
   letter-spacing: 1px;
 }
 
-header nav li a:hover {
+.cabecalho nav li a:hover {
   transition: 0.3s;
   background: var(--cor-botao-hover);
 }
@@ -60,7 +60,7 @@ main {
   justify-content: center;
 }
 
-main .hero {
+main .container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,7 +68,7 @@ main .hero {
   padding: 0 30px;
 }
 
-main .hero .informacoes {
+main .container .informacoes {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -77,13 +77,13 @@ main .hero .informacoes {
   transition: 0.2s;
 }
 
-main .hero .descricao {
+main .container .descricao {
   color: #a8adb7;
   width: 90%;
   font-size: 18px;
 }
 
-main .hero .botao-trailer {
+main .container .botao-trailer {
   padding: 15px;
   color: var(--cor-branca);
   font-size: 20px;
@@ -93,11 +93,11 @@ main .hero .botao-trailer {
   transition: 0.5s all ease-in-out;
 }
 
-main .hero .botao-trailer:hover {
+main .container .botao-trailer:hover {
   transform: scale(1.1);
 }
 
-main .hero .imagem-titulo {
+main .container .imagem-titulo {
   max-width: 500px;
 }
 
