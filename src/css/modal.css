@@ -1,41 +1,40 @@
 .modal {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    opacity: 0;
-    visibility: hidden;    
-    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
-    background-color: #343432bf;
+	background-color: rgba(52, 52, 50, 0.749);
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
 }
 
-.conteudo-modal{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    border-radius: 5px;
-    gap: 15px;
+.conteudo-modal {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	border-radius: 5px;
+	gap: 15px;
 }
 
-.fechar-modal{    
-    width: 40px;
-    line-height: 40px;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 10px;
-    background-color: #ffffff;
+.fechar-modal {
+	width: 40px;
+	line-height: 40px;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 10px;
+	background-color: #ffffff;
+}
+
+.modal iframe {
+	width: 640px;
+	height: 360px;
+	border-width: 0px;
 }
 
 .aberto {
-    opacity: 1;
-    visibility: visible;    
-}
-
-.modal iframe{
-    width: 640px;
-    height: 360px;
-    border-width: 0px;
+	opacity: 1;
+	visibility: visible;
 }

@@ -1,113 +1,96 @@
 body {
-  min-height: 100vh;
-  font-family: "Poppins";    
-}
-
-.carregando {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  background: url("../imagens/mario-up.gif") center no-repeat
-    #F44336;
+	font-family: 'Poppins';
 }
 
 .cabecalho {
-  display: flex;
-  justify-content: space-between;
-  padding: 30px;
-  max-width: 1440px;
-  margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	padding: 30px;
+	max-width: 1440px;
+	margin: 0 auto;
 }
 
 .cabecalho .logo {
-  width: 65px;
+	width: 65px;
 }
 
 .cabecalho .menu {
-  display: flex;
-  align-items: center;
-  height: 100%;
+	display: flex;
+	align-items: center;
+	height: 100%;
 }
 
 .cabecalho nav li a {
-  font-weight: bold;
-  color: #ffffff;
-  font-size: 25px;
-  padding: 10px 20px;
-  transition: 0.2s;
-  border-radius: 50px;  
+	font-weight: bold;
+	color: #ffffff;
+	font-size: 25px;
+	padding: 10px 20px;
+	border-radius: 50px;
+	transition: 0.2s;
 }
 
-.cabecalho nav li a:hover {  
-  background: #d5011d;
-}
-
-.container {
-  display: flex;
-  min-height: calc(100vh - 132px);
-  justify-content: center;
-  padding: 0 30px 30px;
+.cabecalho nav li a:hover {
+	background: #d5011d;
 }
 
 .container {
-  display: flex;  
-  align-items: center;  
-}
-
-.container .informacoes {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 30px;
-  max-width: 750px;
+	max-width: 1440px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	height: calc(100vh - 132px);
+	padding: 0 30px 30px;
 }
 
 .container .descricao {
-  color: #a8adb7;
-  width: 95%;
-  font-size: 18px;
-}
-
-.container .botao-trailer {
-  padding: 15px;
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 700;
-  cursor: pointer;
-  background: #ff0021;
-  transition: 0.5s all ease-in-out;
-  border: none;
-  text-transform: uppercase;
-}
-
-.container .botao-trailer:hover {
-  transform: scale(1.1);
+	color: #a8adb7;
+	width: 85%;
+	font-size: 18px;
+	margin: 30px 0;
 }
 
 .container .imagem-titulo {
-  max-width: 500px;
+	max-width: 500px;
+}
+
+.container .botao-trailer {
+	background-color: #ff0021;
+	color: #ffffff;
+	padding: 15px;
+	font-size: 18px;
+	font-weight: 700;
+	cursor: pointer;
+	border: none;
+	text-transform: uppercase;
+	transition: 0.5s all ease-in-out;
+}
+
+.container .botao-trailer:hover {
+	transform: scale(1.1);
 }
 
 .fundo-video {
-  position: absolute;    
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
-  overflow: hidden;
-}
-
-.fundo-video::after {
-  content: "";
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  /* mostrar como fazer esse efeito aqui https://cssgradient.io/ */
-  background: linear-gradient(90deg,#040203 0%,rgba(0, 0, 0, 0.85) 49%,#040203 100%);
+	position: absolute;
+	background-color: red;
+	width: 100vw;
+	height: 100vh;
+	z-index: -1;
+	overflow: hidden;
 }
 
 .fundo-video .video {
-  height: 100vh;
+	height: 100vh;
+	width: 100vw;
+}
+
+.fundo-video::after {
+	content: '';
+	background-color: #f6465d;
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/* mostrar como fazer esse efeito aqui https://cssgradient.io/ */
+	background: linear-gradient(90deg, #040203 0%, rgba(0, 0, 0, 0.85) 49%, #040203 100%);
 }
