@@ -94,3 +94,44 @@ body {
 	/* mostrar como fazer esse efeito aqui https://cssgradient.io/ */
 	background: linear-gradient(90deg, #040203 0%, rgba(0, 0, 0, 0.85) 49%, #040203 100%);
 }
+
+.modal {
+	background-color: rgba(52, 52, 50, 0.749);
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.conteudo-modal {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	border-radius: 5px;
+	gap: 15px;
+}
+
+.fechar-modal {
+	width: 40px;
+	line-height: 40px;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 10px;
+	background-color: #ffffff;
+}
+
+.modal iframe {
+	width: 640px;
+	height: 360px;
+	border-width: 0px;
+}
+
+.aberto {
+	opacity: 1;
+	visibility: visible;
+}
