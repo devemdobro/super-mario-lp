@@ -11,6 +11,7 @@
 		flex-wrap: wrap;
 		justify-content: center;
 		gap: 30px;
+		height: auto;
 	}
 
 	.container .mario {
