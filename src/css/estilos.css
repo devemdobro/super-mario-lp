@@ -30,7 +30,7 @@ body {
 }
 
 .cabecalho nav li a:hover {
-	background: #d5011d;
+	background-color: #d5011d;
 }
 
 .container {
@@ -42,6 +42,10 @@ body {
 	padding: 0 30px 30px;
 }
 
+.container .imagem-titulo {
+	max-width: 500px;
+}
+
 .container .descricao {
 	color: #a8adb7;
 	width: 85%;
@@ -49,16 +53,12 @@ body {
 	margin: 30px 0;
 }
 
-.container .imagem-titulo {
-	max-width: 500px;
-}
-
 .container .botao-trailer {
 	background-color: #ff0021;
 	color: #ffffff;
 	padding: 15px;
 	font-size: 18px;
-	font-weight: 700;
+	font-weight: bold;
 	cursor: pointer;
 	border: none;
 	text-transform: uppercase;
@@ -71,37 +71,35 @@ body {
 
 .fundo-video {
 	position: absolute;
-	background-color: red;
+	z-index: -1;
 	width: 100vw;
 	height: 100vh;
-	z-index: -1;
 	overflow: hidden;
+	display: flex;
+	justify-content: center;
 }
 
 .fundo-video .video {
-	height: 100vh;	
+	height: 100vh;
 }
 
 .fundo-video::after {
 	content: '';
-	background-color: #f6465d;
 	height: 100vh;
 	width: 100vw;
 	position: absolute;
 	top: 0;
 	left: 0;
-	/* mostrar como fazer esse efeito aqui https://cssgradient.io/ */
-	background: linear-gradient(90deg, #040203 0%, rgba(0, 0, 0, 0.85) 49%, #040203 100%);
+	background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 1) 100%);
 }
 
-
 .modal {
-	background-color: rgba(52, 52, 50, 0.749);
 	position: fixed;
 	width: 100vw;
 	height: 100vh;
 	top: 0;
 	left: 0;
+	background-color: rgba(52, 52, 50, 0.749);
 	opacity: 0;
 	visibility: hidden;
 }
@@ -117,21 +115,23 @@ body {
 }
 
 .fechar-modal {
+	background-color: #ffffff;
+	color: #f03a17;
+	font-weight: bold;
+	font-size: 20px;
 	width: 40px;
-	line-height: 40px;
 	text-align: center;
 	cursor: pointer;
 	border-radius: 10px;
-	background-color: #ffffff;
 }
 
 .modal iframe {
+	border-width: 0;
 	width: 640px;
 	height: 360px;
-	border-width: 0px;
 }
 
-.aberto {
+.modal.aberto {
 	opacity: 1;
 	visibility: visible;
 }
