@@ -1,19 +1,19 @@
 const modal = document.querySelector('.modal');
-const btnAbrirModal = document.querySelector('.botao-trailer');
-const btnfecharModal = document.querySelector('.fechar-modal');
-const frameSource = document.getElementById('video');
-const linkDoVideo = document.querySelector('#video').src;
+const botaoTrailer = document.querySelector('.botao-trailer');
+const botaoFecharModal = document.querySelector('.fechar-modal');
+const video = document.getElementById('video');
+const linkDoVideo = video.src;
 
 function alternarModal() {
 	modal.classList.toggle('aberto');
 }
 
-btnAbrirModal.addEventListener('click', () => {
-	frameSource.setAttribute('src', linkDoVideo);
+botaoTrailer.addEventListener('click', () => {
+	video.setAttribute('src', linkDoVideo);
 	alternarModal();
 });
 
-btnfecharModal.addEventListener('click', () => {
-	frameSource.setAttribute('src', '');
+botaoFecharModal.addEventListener('click', () => {
+	video.setAttribute('src', '');
 	alternarModal();
 });
